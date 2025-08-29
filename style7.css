@@ -1,0 +1,114 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    
+}    
+.container{
+    padding: 20px;
+    box-shadow: 0 0 10px black;
+    width: 50vw;
+    background-color: rgb(208, 208, 182);
+    border-radius: 9px;
+     
+    
+}
+input[type="text"]{
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    
+    
+}
+.input-group{
+    display: flex;
+    margin-bottom: 10 px;
+    /* gap: 5px; */
+    
+    
+}
+#taskInput{
+    background-color: bisque;
+    flex: 1;
+}
+ h1{
+    text-align: center;
+}
+
+
+#addBtn{
+    background-color:olive;
+    border-radius: 8px;
+}
+button{
+    padding: 10px;
+    background-color: rgb(155, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+   
+}
+
+button.hover{
+    
+    background-color: rgb(117, 0, 0);
+}
+li{
+    padding: 2px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 228, 196, 0.756);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+li span{
+    flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+ul{
+    list-style-type: none;
+    padding: 0px;
+    border-radius: 8px;
+}
+li button{
+    padding: 5px;
+    background-color: rgb(155, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+li button.edit-btn{
+    background-color: rgb(255, 196, 144);
+}
+li button.complete-btn{
+    background-color: pink;
+}
+li.completed{
+    text-decoration: line-through;
+    color: grey;
+}
+li button.hover{
+    opacity: 0.8;
+}
+li.action{
+    display: flex;
+    gap: 5px;
+
+}
+@media (max-width:500px){
+    .container{
+        width: 90vw;
+    }
+}

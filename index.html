@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style5.css">
+    
+     <!-- <script>document.addEventListener('DOMContentLoaded',()=>{
+        const createbtn=document.getElementById('createbtn');
+        const createresult=document.getElementById('createresult');
+    })
+    
+    createbtn.addEventListener('click',()=>{
+        const newElm=document.createElement('p');
+        newElm.textContent='this is a new element'
+    
+        createresult.appendchild(newElm)
+    })</script> -->
+</head>
+<body>
+    <div class="container">
+        <div >
+            <h1 id="text">DOM manipulation techniques</h1>
+        </div>
+        <div>
+            <h2>1. create element </h2>
+            <button id="createbtn">create new element</button>
+            <div id="createresult"></div>
+        </div>
+        <div>
+            <h2>2. update element </h2>
+            <button id="updateBtn">update this element</button>
+            <p id="updateText">original text</p>
+        </div>
+        <div>
+            <h2>3. delete element</h2>
+            <button id="deleteBtn">delete this element</button>
+            <p id="deleteText">this element will be deleted</p>
+        </div>
+        <div>
+            <h2>4. event handeling</h2>
+            <button id="hoverBtn">hover over me</button>
+            <p id="hoverText">hover over the button</p>
+        </div>
+        <div>
+            <h2>5. DOM tranversal</h2>
+            <button id="transversalBtn">select sibling element</button>
+            <p id="siblingOne">i am the first sibling</p>
+            <p id="siblingTwo">i am the second sibling</p>
+        </div>
+        <div>
+            <h2>6. CSS manipulation</h2>
+            <button id="cssmanipulation">change color</button>
+        </div>
+    </div>
+    <script src="script.js";> </script>
+</body>
+</html>
